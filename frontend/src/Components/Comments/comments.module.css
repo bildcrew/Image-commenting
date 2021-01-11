@@ -1,0 +1,23 @@
+.bubble{
+    position:absolute;
+    background-color:black;
+    opacity: 0.55;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+    overflow:hidden;
+    color:white;
+    cursor:pointer;
+}
+
+.bubble:hover{
+    width:250px;
+    overflow:visible;
+    z-index: 1;
+}
+
+.comment{
+    background-color:white;
+    border-bottom: 1px solid black;
+    color:black;
+}

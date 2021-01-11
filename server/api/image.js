@@ -36,6 +36,7 @@ router.post('/:name', async (req, res) => {
       y: req.body.y,
     });
     await image.save();
+    console.log(image.bubbles[image.bubbles.length - 1]);
     return res.status(200).send(image.bubbles.pop());
   } catch (error) {
     console.log(error);
